@@ -178,8 +178,6 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
                     super.onManagerConnected(status);
                 }
                 break;
-
-
             }
         }
     };
@@ -495,7 +493,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
         }
         for (int i = 0; i < facesArray.length; i++)
 
-            Imgproc.rectangle(mRgba, facesArray[i].tl(), facesArray[i].br(), FACE_RECT_COLOR, 3);
+            Core.rectangle(mRgba, facesArray[i].tl(), facesArray[i].br(), FACE_RECT_COLOR, 3);
 
         return mRgba;
     }
